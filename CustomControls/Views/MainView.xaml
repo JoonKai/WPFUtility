@@ -6,14 +6,18 @@
         xmlns:local="clr-namespace:CustomControls.Views"
         xmlns:con="clr-namespace:CustomControls.Controls"
         mc:Ignorable="d"
-        Title="MainView" Height="450" Width="800">
+        Title="MainView" Height="700" Width="700">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <con:FanUC Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="82" Width="64"/>
-        <Viewbox Grid.Column="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <con:FanUC Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="82" Width="64"/>
+        <Viewbox Grid.Column="1" Grid.Row="0">
             <con:KoroArmUC HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Viewbox>
     </Grid>

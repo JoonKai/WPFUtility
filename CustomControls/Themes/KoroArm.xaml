@@ -19,17 +19,17 @@
                         <Ellipse HorizontalAlignment="Left" Height="16" Margin="346,346,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.755,2.902" Fill="#FFBFBFBF"/>
                         <Ellipse HorizontalAlignment="Left" Height="16" Margin="228,229,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.755,2.902" Fill="#FFBFBFBF"/>
                         <Ellipse HorizontalAlignment="Left" Height="16" Margin="464,229,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.755,2.902" Fill="#FFBFBFBF"/>
-                        <Rectangle HorizontalAlignment="Center" RadiusX="50.278" RadiusY="50.278" Height="90" Margin="0,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="189" RenderTransformOrigin="0.266,0.5">
+                        <Rectangle HorizontalAlignment="Center" RadiusX="45" RadiusY="45" Height="85" Margin="0,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="189" RenderTransformOrigin="0.266,0.5">
                             <Rectangle.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
                                     <SkewTransform/>
-                                    <RotateTransform Angle="-360"/>
+                                    <RotateTransform x:Name="RotateArm" Angle="-360"/>
                                     <TranslateTransform/>
                                 </TransformGroup>
                             </Rectangle.RenderTransform>
                             <Rectangle.Fill>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,1" SpreadMethod="Reflect">
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
                                     <GradientStop Color="Gray" Offset="0"/>
                                     <GradientStop Color="White" Offset="1"/>
                                 </LinearGradientBrush>
@@ -40,7 +40,7 @@
                                 <TransformGroup>
                                     <ScaleTransform/>
                                     <SkewTransform/>
-                                    <RotateTransform Angle="-1440"/>
+                                    <RotateTransform Angle="-180"/>
                                     <TranslateTransform/>
                                 </TransformGroup>
                             </Rectangle.RenderTransform>
@@ -56,7 +56,7 @@
                                 <TransformGroup>
                                     <ScaleTransform/>
                                     <SkewTransform/>
-                                    <RotateTransform Angle="-5760"/>
+                                    <RotateTransform Angle="-120"/>
                                     <TranslateTransform X="6.474" Y="5.025"/>
                                 </TransformGroup>
                             </Path.RenderTransform>
@@ -92,6 +92,20 @@
                         <Ellipse HorizontalAlignment="Left" Height="17" Margin="726,228,0,0" Stroke="Black" VerticalAlignment="Top" Width="17"/>
                         <Ellipse HorizontalAlignment="Left" Height="13" Margin="728,230,0,0" Stroke="Black" VerticalAlignment="Top" Width="13"/>
                     </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsRotate" Value="true">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard x:Name="ST">
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="RotateArm" Storyboard.TargetProperty="Angle" To="360" Duration="0:0:5" RepeatBehavior="Forever"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <StopStoryboard BeginStoryboardName="ST"/>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

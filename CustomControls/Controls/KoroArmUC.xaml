@@ -6,6 +6,6 @@
              xmlns:local="clr-namespace:CustomControls.Controls"
              mc:Ignorable="d">
     <StackPanel Background="White">
-        <local:KoroArmCC/>
+        <local:KoroArmCC IsRotate="True"/>
     </StackPanel>
 </UserControl>
