@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CustomControls
+namespace CustomControls.Controls
 {
     /// <summary>
-    /// FanUC.xaml에 대한 상호 작용 논리
+    /// KoroArmUC.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class FanUC : UserControl
+    public partial class KoroArmUC : UserControl
     {
-        public FanUC()
+        public KoroArmUC()
         {
             InitializeComponent();
         }

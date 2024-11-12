@@ -1,0 +1,99 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:con="clr-namespace:CustomControls.Controls"
+                    >
+    <Style TargetType="{x:Type con:KoroArmCC}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type con:KoroArmCC}">
+                    <Grid>
+                        <Ellipse HorizontalAlignment="Left" Height="298" Margin="205,88,0,0" Stroke="Black" VerticalAlignment="Top" Width="298">
+                            <Ellipse.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
+                                    <GradientStop Color="Gray" Offset="0" />
+                                    <GradientStop Color="White" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse HorizontalAlignment="Left" Height="16" Margin="346,108,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.755,2.902" Fill="#FFBFBFBF"/>
+                        <Ellipse HorizontalAlignment="Left" Height="16" Margin="346,346,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.755,2.902" Fill="#FFBFBFBF"/>
+                        <Ellipse HorizontalAlignment="Left" Height="16" Margin="228,229,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.755,2.902" Fill="#FFBFBFBF"/>
+                        <Ellipse HorizontalAlignment="Left" Height="16" Margin="464,229,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.755,2.902" Fill="#FFBFBFBF"/>
+                        <Rectangle HorizontalAlignment="Center" RadiusX="50.278" RadiusY="50.278" Height="90" Margin="0,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="189" RenderTransformOrigin="0.266,0.5">
+                            <Rectangle.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-360"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Rectangle.RenderTransform>
+                            <Rectangle.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,1" SpreadMethod="Reflect">
+                                    <GradientStop Color="Gray" Offset="0"/>
+                                    <GradientStop Color="White" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle HorizontalAlignment="Left" RadiusX="40" RadiusY="40" Height="70" Margin="417,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="170" RenderTransformOrigin="0.238,0.49">
+                            <Rectangle.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-1440"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Rectangle.RenderTransform>
+                            <Rectangle.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0">
+                                    <GradientStop Color="Gray" Offset="1"/>
+                                    <GradientStop Color="White" Offset="0"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Path VerticalAlignment="Top" Stroke="Black" Height="50" HorizontalAlignment="Left" Margin="522,207,0,0" RenderTransformOrigin="0.211,0.486" Stretch="Fill" Width="120">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-5760"/>
+                                    <TranslateTransform X="6.474" Y="5.025"/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                            <Path.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF535353" Offset="1"/>
+                                    <GradientStop Color="#FF8D8D8D" Offset="0.963"/>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                            <Path.Data>
+                                <PathGeometry Figures="M25.5,0.5 L90.499999,0.5 114.5,0.5 139.5,0.5 139.5,25 139.5,49.5 114.5,49.5 90.499999,49.5 25.5,49.5 C11.692879,49.5 0.5,38.530976 0.5,25 0.5,11.469024 11.692879,0.50000048 25.5,0.5 z"/>
+                            </Path.Data>
+                        </Path>
+                        <Path VerticalAlignment="Top" Stroke="Black" Height="30" HorizontalAlignment="Left" Margin="696,218,0,0" RenderTransformOrigin="0.211,0.486" Stretch="Fill" Width="117">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-5580"/>
+                                    <TranslateTransform X="6.474" Y="5.025"/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                            <Path.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF707070" Offset="0"/>
+                                    <GradientStop Color="#FFB8B1B1" Offset="0.487"/>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                            <Path.Data>
+                                <PathGeometry Figures="M25.5,0.5 L90.499999,0.5 114.5,0.5 139.5,0.5 139.5,25 139.5,49.5 114.5,49.5 90.499999,49.5 25.5,49.5 C11.692879,49.5 0.5,38.530976 0.5,25 0.5,11.469024 11.692879,0.50000048 25.5,0.5 z"/>
+                            </Path.Data>
+                        </Path>
+                        <Ellipse HorizontalAlignment="Left" Height="17" Margin="726,228,0,0" Stroke="Black" VerticalAlignment="Top" Width="17"/>
+                        <Ellipse HorizontalAlignment="Left" Height="13" Margin="728,230,0,0" Stroke="Black" VerticalAlignment="Top" Width="13"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
